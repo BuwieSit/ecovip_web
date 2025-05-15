@@ -1,0 +1,24 @@
+import './header.css'
+
+function Head() {
+    return (
+        <div className='head'>
+            
+            <div className='nav-list'>
+                <ul>
+                    <li> Home </li>
+                    <li> About</li>
+                    <li> Packages</li>
+                    <li> Contact</li>
+                </ul>
+            </div>
+
+        <div className='logo-cont'>
+            <h1 id='logo'>Logo Placeholder</h1>
+        </div>
+
+        </div>
+
+    );
+}
+export default Head;
