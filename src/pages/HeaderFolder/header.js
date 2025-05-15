@@ -11,6 +11,7 @@ function Head() {
                     <li> About</li>
                     <li> Packages</li>
                     <li> Contact</li>
+                    <li> Test</li>
                 </ul>
             </div>
 
