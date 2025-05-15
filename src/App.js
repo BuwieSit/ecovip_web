@@ -1,10 +1,15 @@
 
-import Head from './components/HeaderFolder/header';
+import Head from './pages/HeaderFolder/header.js';
+import Home from './pages/Home/Home.js';
 
 function App() {
  
   return (
-    <Head />
+    <>
+      <Head />
+      <Home />
+    </>
+    
 
   );
 }

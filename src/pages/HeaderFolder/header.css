@@ -1,7 +1,9 @@
-body {
-    margin: 0;
-    padding: 0;
-    border: 0;
+@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
+
+
+:root {
+    --nav-font: "Spinnaker", sans-serif;
+    --nav-fsize: 1rem;
 }
 
 .head {
@@ -9,6 +11,7 @@ body {
     top: 0;
     height: 80px;
     width: 100%;
+    background-color: white;
 
 }
 .logo-cont {
@@ -22,6 +25,8 @@ body {
     float: right;
     width: 40%;
     height: 100%;
+    font-family: var(--nav-font);
+    font-size: var(--nav-fsize);
 
 }
 .nav-list > ul {

@@ -1,4 +1,5 @@
 import './header.css'
+import '../../components/assets/global.css'
 
 function Head() {
     return (
