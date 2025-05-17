@@ -15,8 +15,12 @@
     grid-template-columns: repeat(3, 400px);
     justify-content: center;
     align-items: center;
-    
 }
+.package-wrapper:hover {
+    transform: translateY(-5%);
+}
+
+
 
 .package-wrapper {
     width: 350px;
@@ -32,6 +36,7 @@
     justify-content: space-evenly;
     overflow: hidden;
     z-index: 80;
+    transition: 0.2s ease;
 }
 .img-wrapper {
     width: 90%;
