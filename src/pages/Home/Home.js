@@ -8,7 +8,9 @@ function Home() {
         <>
             <div className='top-wrapper'>
                 <img src={masungi} alt='masungi' id='masungi'></img>
+
             </div>
+
             <div className='margin'></div>
         </>
         
