@@ -2,6 +2,9 @@ import '../../components/assets/global.css';
 import './content.css';
 import masungi from '../../components/assets/masungi.jpg';
 
+let package_title = document.getElementById('packName');
+
+ 
 function Content() {
 
     return(
