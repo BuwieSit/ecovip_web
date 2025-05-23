@@ -232,7 +232,7 @@ hr {
 .calabarzon {
     width: 100%;
     height: 500px;
-    background: linear-gradient(#3285B3,#205470);
+    background: linear-gradient(#574F27,#3285B3);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -250,10 +250,13 @@ hr {
     
 }
 #calabarzon-title {
-    font-size: 150px;
+    margin-top: -20px;
+    font-size: 180px;
     background-image: url("../../components/assets/tourism_bg.png");
+    background-position: bottom;
     background-size: cover; 
     background-clip: text;
+    letter-spacing: 20px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     color: transparent;   
