@@ -2,7 +2,6 @@ import '../../components/assets/global.css';
 import './content.css';
 import masungi from '../../components/assets/masungi.jpg';
 
-let package_title = document.getElementById('packName');
 
  
 function Content() {
@@ -24,7 +23,7 @@ function Content() {
                 </div>
             </div>
             <div className='package-wrapper'>
-
+            <input type='file'></input>
             </div>
             <div className='package-wrapper'>
 
