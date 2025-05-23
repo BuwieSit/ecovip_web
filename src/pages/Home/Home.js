@@ -7,6 +7,7 @@ import smell from '../../components/assets/smell.png';
 import taste from '../../components/assets/taste.png';
 import touch from '../../components/assets/touch.png';
 import Tahak_nobg from '../../components/assets/Tahak_nobg.png'
+
 function Home() {
       
     return(
@@ -18,7 +19,7 @@ function Home() {
                     Your browser does not support the video tag.
                 </video>
                 <img id='tahakLogo' src={Tahak_nobg} alt='TahaK logo'></img>
-                <h1>Tahanan at Kalikasan</h1>
+                <h1>Tahanan sa Kalikasan</h1>
                 <p><i>“Ito ay pagtahak sa Pilipinas, sa payapang pahingahan tungo sa ganap na kaginhawaan.”</i></p>
                 <p className='source'>Video source: Tourism Philippines (Youtube)</p>
             </div>
@@ -94,7 +95,9 @@ function Home() {
                     <p id='calabarzon-motto'><i>Calabarzon sa Habang Panahon!</i></p>
                 </div>
             </div>
-            <div className='margin'></div>
+            {/* <div className='margin'></div> */}
+
+
         </>
         
 
