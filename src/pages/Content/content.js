@@ -23,7 +23,7 @@ function Content() {
                 </div>
             </div>
             <div className='package-wrapper'>
-            <input type='file'></input>
+            
             </div>
             <div className='package-wrapper'>
 

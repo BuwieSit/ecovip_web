@@ -64,7 +64,12 @@ function Home() {
             
             <section className='parallax' id='pxAbout'>
                 <div className='parallax-inner'>
-                    <p className='pr-title'>Why TahaK?</p>
+
+                    <div className='pr-wrapper'>
+                        <p className='pr-title'>Why TahaK?</p>
+                        <hr></hr>
+                    </div>
+                    
                     <ul className='pr-list about-list'>
                         <li>
                             <p>Story</p>
@@ -81,9 +86,15 @@ function Home() {
                     </ul>
                 </div>
             </section>
+
+
+            <div className='calabarzon'>
+                <div className='calabarzon-wrapper'>
+                    <h3 id='calabarzon-title'>CALABARZON</h3>
+                    <p id='calabarzon-motto'>Calabarzon sa Habang Panahon! (Calabarzon Forever!)</p>
+                </div>
+            </div>
             <div className='margin'></div>
-
-
         </>
         
 

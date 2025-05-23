@@ -166,17 +166,20 @@
   z-index: -1;
 }
 .parallax-inner {
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 25%;
+    padding-bottom: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 50px;
 }
 .pr-title {
     font-size: 80px;
     font-weight: 700;
     color: white;
+    cursor: pointer;
+    line-height: 0;
 }
 .pr-list {
     width: 50%;
@@ -190,18 +193,31 @@
     font-size: 20px;
     
 }
+
+hr {
+    position: absolute;
+    width: 10%; 
+    height: 1px;
+    border: none;
+    transition: all 0.5s ease;
+}
+.pr-wrapper {
+    position: relative;
+}
+.pr-wrapper:hover > hr {
+    border: none;
+    opacity: 1;
+    transform: scale(1);
+    width: 100%; 
+    height: 1px;
+    background-color: white;
+    
+}
 .pr-list > li {
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
     line-height: 0;
-}
-hr {
-    position: absolute;
-    width: 0%; 
-    height: 0px;
-    border: none;
-    transition: all 0.5s ease;
 }
 
 .pr-list > li:hover > hr {
@@ -211,5 +227,39 @@ hr {
     width: 100%; 
     height: 1px;
     background-color: white;
+}
 
+.calabarzon {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(#3285B3,#205470);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calabarzon-wrapper {
+    position: relative;
+    padding: 20px;
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#calabarzon-title {
+    font-size: 150px;
+    background-image: url("../../components/assets/tourism_bg.png");
+    background-size: cover; 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent;   
+}
+#calabarzon-motto {
+    font-size: 20px;
+    margin-top: -150px; /* ✅ Pulls it closer to the title */
+    line-height: 1.1;   /* ✅ Safe default, prevents cutoff */
 }
