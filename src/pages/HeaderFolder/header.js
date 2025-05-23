@@ -16,7 +16,7 @@ function Head() {
             </div>
             <div className='search-wrapper'>
                 <form autoComplete='off'>
-                    <input name="srch" id="srch" placeholder="search a country"></input>
+                    <input name="srch" id="srch" placeholder="search thru CALABARZON"></input>
                     <img src={search} alt='search' id='srchSymbol'></img>
                 </form>
             </div>

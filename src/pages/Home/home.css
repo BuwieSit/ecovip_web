@@ -37,10 +37,11 @@
     position: absolute;
 }
 
+/* About Page */
 .about-page {
     width: 100%;
     height: 500px;
-    background-color: white;
+    background:  #67943A;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -55,8 +56,7 @@
     justify-content: space-evenly;
     
 }
-/* linear-gradient(to bottom right, #574F27 50%,#67943A); */
-
+/* Left wrapper */
 .left-wrapper {
     width: 90%;
     height: 90%;
@@ -70,56 +70,78 @@
     -webkit-backdrop-filter: blur( 8.5px );
     border-radius: 10px;
 }
+
 #aboutTitle {
     font-size: 30px;
-    text-align: left;
+    font-weight: 900;
+    line-height: 0;
+    z-index: 10;
+    opacity: 0;
 }
-.left > img {
-    width: 80%;
+.left-wrapper > img {
+    position: absolute;
+    width: 100%;
     aspect-ratio: 1;
 }
+/* 
 .sections::before, .left-wrapper::before  {
   content: "";
   position: absolute;
-  inset: -5px; /* control the spread */
-  transform: translate(0px, 0px); /* control the offsets */
-  z-index: -1; /* place the element behind */
+  inset: -5px; 
+  transform: translate(0px, 0px); 
+  z-index: -1;
   background: linear-gradient(to bottom right, #574F27 ,#67943A, #3285B3);
-  filter: blur(10px); /* control the blur */
-}
+  filter: blur(10px); 
+} */
+
+/* Right wrapper */
 .sections {
     width: 90%;
     height: 40%;
     padding: 10px;
-    background: rgba( 255, 255, 255, 1 );
-    box-shadow: 0 0 20px black;
-    backdrop-filter: blur( 8.5px );
-    -webkit-backdrop-filter: blur( 8.5px );
-    border-radius: 10px;
+    color: white;
+    
+
 }
 .upper-sect {
     font-size: 15px;
     text-wrap: wrap;
     text-align: justify;
+    filter: drop-shadow(0px 0px 5px #c7b146);
+    
 }
-
+.lower-sect {
+    border-top: 1px solid black;
+}
 .sect-title {
     font-size: 20px;
     font-weight: 400;
     text-align: left;
     line-height: 0;
+    filter: drop-shadow(0px 0px 5px #c7b146);
 }
 .lower-desc {
     font-weight: 300;
+    filter: drop-shadow(0px 0px 5px #c7b146);
 }
 .senses-list {
+    margin-top: 20px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    filter: drop-shadow(0px 0px 2px #574F27);
+    transition: all 0.3s ease;
 }
+.senses {
+    transition: all 0.3s ease;
+}
+.senses:hover {
+    transform: scale(1.3);
+}
+/* right wrapper end */
 
 .margin {
     margin-top: 20%;
@@ -127,6 +149,7 @@
 #pxAbout {
     background: url('../../components/assets/hinulutaktak.jpg') no-repeat fixed 100%;
     background-size: cover;
+    
 }
 .parallax {
     position: relative;
@@ -143,6 +166,50 @@
   z-index: -1;
 }
 .parallax-inner {
-    padding-top: 30%;
-    padding-bottom: 30%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pr-title {
+    font-size: 80px;
+    font-weight: 700;
+    color: white;
+}
+.pr-list {
+    width: 50%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 20px;
+    
+}
+.pr-list > li {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    line-height: 0;
+}
+hr {
+    position: absolute;
+    width: 0%; 
+    height: 0px;
+    border: none;
+    transition: all 0.5s ease;
+}
+
+.pr-list > li:hover > hr {
+    border: none;
+    opacity: 1;
+    transform: scale(1);
+    width: 100%; 
+    height: 1px;
+    background-color: white;
+
 }

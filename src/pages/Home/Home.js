@@ -23,14 +23,11 @@ function Home() {
                 <p className='source'>Video source: Tourism Philippines (Youtube)</p>
             </div>
 
-        <div className='margin'></div>
-
             <div id='about' className='about-page'>
                 <div className='about-sections left'>
                     <div className='left-wrapper'>
-
-                        <h2 id='aboutTitle'>TahaK: Tahanan sa Kalikasan</h2>
-                        <img alt='something representing Tahak'></img>
+                        <p id='aboutTitle'>TahaK</p>
+                        <img src={Tahak_nobg} alt='something representing Tahak'></img>
                     </div>
                     
 
@@ -49,7 +46,7 @@ function Home() {
 
                     </section>
                     <section className='sections lower-sect'>
-                        <p className='sect-title'>Five senses framework</p>
+                        <p className='sect-title'>Incorporating the five senses</p>
                         <p className='tahakDesc lower-desc'>
                             Each curated experience engages the body and mind through Filipino-centered rituals and environments.
                         </p>
@@ -64,11 +61,24 @@ function Home() {
                 </div>
             </div>
 
-            <div className='margin'></div>
             
             <section className='parallax' id='pxAbout'>
                 <div className='parallax-inner'>
-                    <h1>test</h1>
+                    <p className='pr-title'>Why TahaK?</p>
+                    <ul className='pr-list about-list'>
+                        <li>
+                            <p>Story</p>
+                            <hr></hr>
+                        </li>
+                        <li>
+                            <p>Mission</p>
+                            <hr></hr>
+                        </li>
+                        <li>
+                            <p>Vision</p>
+                            <hr></hr>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <div className='margin'></div>
