@@ -7,6 +7,9 @@ import smell from '../../components/assets/smell.png';
 import taste from '../../components/assets/taste.png';
 import touch from '../../components/assets/touch.png';
 import Tahak_nobg from '../../components/assets/Tahak_nobg.png'
+import branch1 from '../../components/assets/branch1.png';
+import branch2 from '../../components/assets/branch2.png';
+import branch3 from '../../components/assets/branch3.png';
 
 function Home() {
       
@@ -25,6 +28,9 @@ function Home() {
             </div>
 
             <div id='about' className='about-page'>
+                <img src={branch1} className='branches' id='br1'></img>
+                <img src={branch2} className='branches' id='br2'></img>
+                <img src={branch3} className='branches' id='br3'></img>
                 <div className='about-sections left'>
                     <div className='left-wrapper'>
                         <p id='aboutTitle'>TahaK</p>

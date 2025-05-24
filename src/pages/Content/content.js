@@ -21,6 +21,7 @@ function Content() {
 
             <section className='parallax' id='cavitePackage'>
                 <div className='parallax-inner'>
+                    <h2 className='package-title'>CAVITE</h2>
                     <div className='package-wrapper' id='cavite-wrapper'>
                             <div className='img-wrapper'><img src={kapwa} alt='Destination-picture' id='package-img'></img></div>
 
@@ -113,7 +114,7 @@ function Content() {
             <section className='parallax' id='quezonPackage'>
                 <div className='parallax-inner'>
                     <div className='package-wrapper' id='quezon-wrapper'>
-                            <div className='img-wrapper'><img src={masungi} alt='Destination-picture' id='package-img'></img></div>
+                            <div className='img-wrapper'><img src={banahaw} alt='Destination-picture' id='package-img'></img></div>
 
                             <div className='title-wrapper animate__animated animate__slideInDown'>
                                 <h1 id='packName'>Kabanhawan</h1>

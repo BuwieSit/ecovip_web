@@ -39,7 +39,12 @@
     justify-content: space-evenly;
 }
 .package-description {
-    background-image: linear-gradient(to right,	rgb(150,114,89), rgb(56,34,15));
+    background-image: linear-gradient(to right,	rgba(150, 114, 89, 0.5), rgba(56,34,15, 0.5));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     width: 800px;
     height: 500px;
     border-radius: 50px;
@@ -55,10 +60,20 @@
     background-size: cover;
 }
 #lagBat-wrapper {
-    background-image: linear-gradient(to right,	rgb(50, 133, 179), rgb(37, 100, 134));
+    background-image: linear-gradient(to right,	rgba(50, 133, 179, 0.5), rgba(37, 100, 134, 0.5));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 #lagBatDesc {
-    background-image: linear-gradient(to right,	rgb(37, 100, 134), rgb(21, 56, 75));
+    background-image: linear-gradient(to right,	rgba(37, 100, 134, 0.5), rgba(21, 56, 75, 0.5));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 #rizalPackage {
@@ -67,31 +82,63 @@
 }
 
 #rizal-wrapper {
-    background-image: linear-gradient(to right,	rgb(103, 148, 58), rgb(70, 100, 39));
+    background-image: linear-gradient(to right,	rgba(103, 148, 58, 0.5), rgba(70, 100, 39, 0.5));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 #rizalDesc {
-    background-image: linear-gradient(to right,	rgb(70, 100, 39), rgb(87, 79, 39));
+    background-image: linear-gradient(to right,	rgba(70, 100, 39, 0.5), rgba(87, 79, 39, 0.5));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 #quezonPackage {
     background: url('../../components/assets/hilot.png') no-repeat fixed 100%;
     background-size: cover;
 }
 #quezon-wrapper {
-    background-image: linear-gradient(to right,	rgb(207, 79, 46), rgb(141, 54, 32), rgb(87, 79, 39));
+    background-image: linear-gradient(to right,	rgba(207, 79, 46, 0.5), rgba(141, 54, 32, 0.5), rgba(87, 79, 39, 0.5));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 #quezonDesc {
-    background-image: linear-gradient(to right,	rgb(87, 79, 39), rgb(141, 128, 64));
+    background-image: linear-gradient(to right,	rgba(87, 79, 39, 0.5), rgba(141, 128, 64, 0.5));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .package-wrapper:hover {
     transform: translateY(-5%);
 }
-
+.package-title {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    letter-spacing: 5px;
+}
 .package-wrapper {
     width: 350px;
     height: 500px;
     padding: 10px;
-    background-image: linear-gradient(to right,	rgb(219,193,172), rgb(150,114,89));
+    background-image: linear-gradient(to right,	rgba(219,193,172, 0.5), rgba(150,114,89, 0.5));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 30px;
     display: flex;
     flex-direction: column;
