@@ -1,6 +1,7 @@
-/* :root {
+@import url(../../components/assets/global.css);
 
-} */
+
+
 
 .theme-transition {
     width: 100%;
@@ -128,6 +129,8 @@
     transform: translate(-50%, -50%);
     font-size: 80px;
     letter-spacing: 5px;
+    
+
 }
 .package-wrapper {
     width: 350px;
@@ -196,7 +199,8 @@
     width: 100%;
     border-top: 1px solid black;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 }
 

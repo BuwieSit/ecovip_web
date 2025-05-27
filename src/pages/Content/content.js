@@ -33,6 +33,7 @@ function Content() {
                                 <p className='description'>Coffee-inspired experience that nurtures connection, creativity, and self-discovery.</p>
                                 <div className='more-wrapper'>
                                     <p id='price'>₱₱₱</p>
+                                    <p id='pax'>5-10 pax</p>
                                     
                                 </div>
                             </div>
@@ -63,7 +64,7 @@ function Content() {
                                 <p className='description'>Coffee-inspired experience that nurtures connection, creativity, and self-discovery.</p>
                                 <div className='more-wrapper'>
                                     <p id='price'>₱₱₱</p>
-                                    
+                                    <p id='pax'>5-10 pax</p>
                                 </div>
                             </div>
                     </div>
@@ -93,7 +94,7 @@ function Content() {
                                 <p className='description'>Coffee-inspired experience that nurtures connection, creativity, and self-discovery.</p>
                                 <div className='more-wrapper'>
                                     <p id='price'>₱₱₱</p>
-                                    
+                                    <p id='pax'>5-10 pax</p>
                                 </div>
                             </div>
                     </div>
@@ -124,7 +125,7 @@ function Content() {
                                 <p className='description'>Coffee-inspired experience that nurtures connection, creativity, and self-discovery.</p>
                                 <div className='more-wrapper'>
                                     <p id='price'>₱₱₱</p>
-                                    
+                                    <p id='pax'>5-10 pax</p>
                                 </div>
                             </div>
                     </div>

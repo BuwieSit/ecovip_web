@@ -12,6 +12,10 @@
     height: 60px;
     width: 100%;
     z-index: 100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     background-image: linear-gradient(to bottom right ,rgba(50, 133, 179, 0.7), rgba(103, 148, 58, 0.7) );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
@@ -21,10 +25,13 @@
 }
 .logo-cont {
     position: relative;
-    float: left;
-    width: 30%;
+    width: 50%;
     height: 100%;
     padding-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
 }
 .logo-cont > img {
     width: 60px;
@@ -32,11 +39,11 @@
 }
 
 .nav-list {
-    float: right;
-    width: 40%;
+    width: 50%;
     height: 100%;
     font-family: var(--nav-font);
     font-size: var(--nav-fsize);
+    
 }
 
 .nav-list > ul {
@@ -77,13 +84,49 @@
     
 }
 
-.search-wrapper {
+#createBtn {
+    position: relative;
+    width: 100px;
+    height: 45px;
+    cursor: pointer;
+    font-family: var(--nav-font);
+    font-size: var(--nav-fsize);
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 0px 5px black;
+    background: linear-gradient(to right, #0FEF00, #2E5B2C);
+    color: white;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+#createBtn::before {
+    content: "Experience";
+    width: 0%;
+    opacity: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #830000;
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 5;
+    transition: all 0.3s ease;
+}
+#createBtn:hover::before {
     transform: translate(-50%, -50%);
+    width: 100%;
+    opacity: 1;
+}
+
+
+.search-wrapper {
+
     border: 1px solid black;
-    
     border-radius: 50px;
     width: 300px;
     height: 40px;

@@ -1,20 +1,26 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Head from './pages/HeaderFolder/header';
+import Home from './pages/Home/Home';
+import Create from './pages/Create/create.js';
+import Content from './pages/Content/content';
 
-import ReactDOM from "react-dom/client";
-import Head from './pages/HeaderFolder/header.js';
-import Home from './pages/Home/Home.js';
-import Content from './pages/Content/content.js';
+function App() {
 
-export default function App() {
- 
   return (
-    <>
-      < Head/>
-      < Home/>
-      < Content/>
+    <Router>
+      <Head />
 
-    </>
-  
-
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Home />
+            <Content />
+          </>
+        }/>
+        <Route path="/create" element={<Create/>} />
+      </Routes>
+    </Router>
   );
 }
 
+export default App;
