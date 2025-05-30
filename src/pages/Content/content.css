@@ -39,18 +39,6 @@
     align-items: center;
     justify-content: space-evenly;
 }
-.package-description {
-    background-image: linear-gradient(to right,	rgba(150, 114, 89, 0.5), rgba(56,34,15, 0.5));
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur( 9.5px );
-    -webkit-backdrop-filter: blur( 9.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    width: 800px;
-    height: 500px;
-    border-radius: 50px;
-    padding: 10px;
-}
 #cavitePackage {
     background: url('../../components/assets/amadeo.jpg') no-repeat fixed 100%;
     background-size: cover;
@@ -60,110 +48,29 @@
     background: url('../../components/assets/wakim.jpeg') no-repeat fixed 100%;
     background-size: cover;
 }
-#lagBat-wrapper {
-    background-image: linear-gradient(to right,	rgba(50, 133, 179, 0.5), rgba(37, 100, 134, 0.5));
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur( 9.5px );
-    -webkit-backdrop-filter: blur( 9.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-#lagBatDesc {
-    background-image: linear-gradient(to right,	rgba(37, 100, 134, 0.5), rgba(21, 56, 75, 0.5));
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur( 9.5px );
-    -webkit-backdrop-filter: blur( 9.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
 
 #rizalPackage {
     background: url('../../components/assets/firefly.jpg') no-repeat fixed 100%;
     background-size: cover;
 }
 
-#rizal-wrapper {
-    background-image: linear-gradient(to right,	rgba(103, 148, 58, 0.5), rgba(70, 100, 39, 0.5));
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur( 9.5px );
-    -webkit-backdrop-filter: blur( 9.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-#rizalDesc {
-    background-image: linear-gradient(to right,	rgba(70, 100, 39, 0.5), rgba(87, 79, 39, 0.5));
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur( 9.5px );
-    -webkit-backdrop-filter: blur( 9.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
 #quezonPackage {
     background: url('../../components/assets/hilot.png') no-repeat fixed 100%;
     background-size: cover;
 }
-#quezon-wrapper {
-    background-image: linear-gradient(to right,	rgba(207, 79, 46, 0.5), rgba(141, 54, 32, 0.5), rgba(87, 79, 39, 0.5));
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur( 9.5px );
-    -webkit-backdrop-filter: blur( 9.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-#quezonDesc {
-    background-image: linear-gradient(to right,	rgba(87, 79, 39, 0.5), rgba(141, 128, 64, 0.5));
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur( 9.5px );
-    -webkit-backdrop-filter: blur( 9.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
 
-.package-wrapper:hover {
-    transform: translateY(-5%);
-}
-.package-title {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    letter-spacing: 5px;
-    
 
-}
-.package-wrapper {
-    width: 350px;
-    height: 500px;
-    padding: 10px;
-    background-image: linear-gradient(to right,	rgba(219,193,172, 0.5), rgba(150,114,89, 0.5));
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur( 9.5px );
-    -webkit-backdrop-filter: blur( 9.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    z-index: 80;
-    transition: 0.2s ease;
-}
 .carousel-content {
     width: 400px;
     border-radius: 50px;
     box-shadow: -20px 5px 10px black;
 }
 
-
-
-.image-carousel {
+.description-box {
     width: 800px;
     height: 700px;
     padding: 10px;
-    background-image: linear-gradient(to right,	rgba(219,193,172, 0.5), rgba(150,114,89, 0.5));
+    background-image: linear-gradient(to right,	rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     backdrop-filter: blur( 9.5px );
     -webkit-backdrop-filter: blur( 9.5px );
@@ -179,6 +86,25 @@
     transition: 0.2s ease;
 }
 
-.image-carousel > img {
-
+.package-wrapper {
+    width: 90%;
+    height: 50%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.desc-wrapper {
+    font-size: 20px;
+    font-weight: 500;
+}
+.highlights-wrapper > ul {
+    list-style-type: "✔️";
+    font-family: var(--text-font-2);
+    font-size: 15px;
+    font-weight: 500;
+}
+.highlights-wrapper > ul > li {
+    margin-bottom: 5px;
 }
