@@ -7,6 +7,8 @@ import water_trans from '../../components/assets/water_trans.png';
 import beans_trans from '../../components/assets/beans_trans.png';
 import bush_trans from '../../components/assets/bush_trans.png';
 import herbal_trans from '../../components/assets/herbal_trans.png';
+import kapwa from '../../components/assets/Tour Package/kapwa.png'
+import kapwaImage from '../../components/assets/kapwaImage.png'
 import 'animate.css';
  
 function Content() {
@@ -20,7 +22,10 @@ function Content() {
 
             <section className='parallax' id='cavitePackage'>
                 <div className='parallax-inner'>
-
+                    <img src={kapwa} alt='not available' id='kapwaPackage' className='carousel-content'></img>
+                    <div className='image-carousel kapwa-carousel'>
+                        <img src={kapwaImage}></img>
+                    </div>
                 </div>
             </section>
 
