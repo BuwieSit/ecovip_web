@@ -58,26 +58,25 @@
     background: url('../../components/assets/hilot.png') no-repeat fixed 100%;
     background-size: cover;
 }
-
+.carousel-item {
+  transition: transform 1.5s ease-in-out; /* change 2s to your desired speed */
+}
 .image-carousel {
-    width: 70%;
+    width: 100%;
     aspect-ratio: 16/9;
-    padding: 50px;
-    border-radius: 50px;
+    padding: 10%;
     position: relative;
     overflow: hidden;
     margin-bottom: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     background-image: linear-gradient(to right,	rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     backdrop-filter: blur( 9.5px );
     -webkit-backdrop-filter: blur( 9.5px );
-    border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    border-radius: 30px;
 
 }
 .sourceLink {

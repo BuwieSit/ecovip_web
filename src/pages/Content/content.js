@@ -48,7 +48,7 @@ function Content() {
                 <div className='parallax-inner'>
 
                     <div className='image-carousel cavite-carousel'>
-                        <Carousel controls={false} indicators={false} interval={2000} pause={false} wrap={true}>
+                        <Carousel controls={false} indicators={false} interval={3000} pause={false} wrap={true}>
                             <Carousel.Item>
                                 <img src={amadeo_coffee_1} className='carousel-content'></img>
                                 <Carousel.Caption>
