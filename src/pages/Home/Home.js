@@ -98,7 +98,6 @@ function Home() {
             <div className='calabarzon'>
                 <div className='calabarzon-wrapper'>
                     <h3 id='calabarzon-title'>CALABARZON</h3>
-                    <p id='calabarzon-motto'><i>Calabarzon sa Habang Panahon!</i></p>
                 </div>
             </div>
             {/* <div className='margin'></div> */}

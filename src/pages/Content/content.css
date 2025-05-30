@@ -35,7 +35,7 @@
     padding-top: 25%;
     padding-bottom: 25%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -59,11 +59,61 @@
     background-size: cover;
 }
 
+.image-carousel {
+    width: 70%;
+    aspect-ratio: 16/9;
+    padding: 50px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: linear-gradient(to right,	rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 30px;
+
+}
+.sourceLink {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+.sourceLink:hover {
+    color: #0FEF00;
+    filter: drop-shadow(0px 0px 10px #0FEF00);
+}
+#caption {
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 0;
+    text-shadow: 0px 0px 10px black;
+}
 
 .carousel-content {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover; 
+}
+.container-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.packages-content {
     width: 400px;
     border-radius: 50px;
-    box-shadow: -20px 5px 10px black;
+    box-shadow: 0px 5px 10px black;
 }
 
 .description-box {
@@ -74,8 +124,6 @@
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     backdrop-filter: blur( 9.5px );
     -webkit-backdrop-filter: blur( 9.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -84,8 +132,22 @@
     overflow: hidden;
     z-index: 80;
     transition: 0.2s ease;
+    box-shadow: 0px 5px 10px black;
+    color: white;
+    text-shadow: 0px 5px 10px black;
 }
-
+.kapwa-desc {
+    background-image: linear-gradient(to top, #705139, #cfb49d);
+}
+.kadalisayan-desc {
+    background-image: linear-gradient(to top, #6a6b3d, #bcbd98);
+}
+.kalikhasan-desc {
+    background-image: linear-gradient(to top,#1f4679, #88b0e8);
+}
+.kabanhawan-desc {
+    background-image: linear-gradient(to top,#2c4914, #597728);
+}
 .package-wrapper {
     width: 90%;
     height: 50%;
