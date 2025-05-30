@@ -7,7 +7,6 @@ import water_trans from '../../components/assets/water_trans.png';
 import beans_trans from '../../components/assets/beans_trans.png';
 import bush_trans from '../../components/assets/bush_trans.png';
 import herbal_trans from '../../components/assets/herbal_trans.png';
-import kapwa from '../../components/assets/kapwa.png';
 import 'animate.css';
  
 function Content() {
@@ -21,28 +20,7 @@ function Content() {
 
             <section className='parallax' id='cavitePackage'>
                 <div className='parallax-inner'>
-                    <h2 className='package-title'>CAVITE</h2>
-                    <div className='package-wrapper' id='cavite-wrapper'>
-                            <div className='img-wrapper'><img src={kapwa} alt='Destination-picture' id='package-img'></img></div>
 
-                            <div className='title-wrapper animate__animated animate__slideInDown'>
-                                <h1 id='packName'>Kapwa</h1>
-                            </div>
-
-                            <div className='info-wrapper'>
-                                <p className='description'>Coffee-inspired experience that nurtures connection, creativity, and self-discovery.</p>
-                                <div className='more-wrapper'>
-                                    <p id='price'>₱₱₱</p>
-                                    <p id='pax'>5-10 pax</p>
-                                    
-                                </div>
-                            </div>
-                    </div>
-
-                    <div className='package-description'>
-
-                    </div>
-                
                 </div>
             </section>
 
