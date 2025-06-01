@@ -26,9 +26,9 @@ function Head() {
       <div className='nav-list'>
         <ul>
           <li><Link to='/'>Home</Link></li>
-          <li><Link to='/'>About</Link></li>
-          <li><Link to='/'>Packages</Link></li>
-          <li><Link to='/'>Contact</Link></li>
+          <li><Link to='/About_Page'>About</Link></li>
+          <li><Link to='/Package_Page'>Packages</Link></li>
+          <li><Link to='/Contact_Page'>Contact</Link></li>
           <li>
             <Link to='/create'>
               <button id='createBtn'>Create</button>
