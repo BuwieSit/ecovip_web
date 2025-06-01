@@ -16,6 +16,11 @@ body {
     --header-font: "DM Serif Text", serif;
     --text-font: "Inter", sans-serif;
     --text-font-2: "Montserrat", sans-serif;
+
+    --kapwa-color: rgb(103, 56, 19);
+    --kadalisayan-color: rgb(163, 164, 93);
+    --kalikhasan-color: rgb(104, 142, 237);
+    --kabanhawan-color: rgb(52, 79, 33);
 }
 
 h1 {

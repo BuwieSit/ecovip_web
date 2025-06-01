@@ -1,8 +1,0 @@
-.wrapper {
-    width: 90%;
-    height: 100vh;
-    background-color: red;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
