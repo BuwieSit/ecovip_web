@@ -19,25 +19,24 @@
     height: 400px;
     overflow: hidden;
     transition: all 0.3s ease;
+    border-radius: 10px;
 }
 .packages:hover {
     box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
     backdrop-filter: blur( 9px );
     -webkit-backdrop-filter: blur( 9px );
-    border-radius: 10px;
-    color: white;
-    text-shadow: 0px 0px 10px black;
+    transform: scale(1.05);
 }
-.kapwa-package:hover {
+.kapwa-package {
     background: rgba( 194, 94, 0, 0.8);
 }
-.kadalisayan-package:hover {
+.kadalisayan-package {
     background: var(--kadalisayan-color);
 }
-.kalikhasan-package:hover {
+.kalikhasan-package {
     background: var(--kalikhasan-color);
 }
-.kabanhawan-package:hover {
+.kabanhawan-package {
     background: rgba(52, 79, 33, 0.5);
 }
 .packages > thead {
@@ -49,17 +48,17 @@
     text-align: center;
     padding: 10px;
 }
-.packages > tr {
+.packages > tbody > tr {
     cursor: pointer;
     transition: all 0.3s ease;
 
 }
-.packages > tr:hover {
+.packages > tbody tr:hover {
     background-color: #C25E00;
     color: black;
 
 }
-.packages > tr > td {
+.packages > tbody > tr > td {
     padding: 15px;
     font-size: 13px;
     font-weight: 600;
@@ -81,4 +80,14 @@
 .diy-package:hover {
     color: black;
     text-shadow: 0px 0px 0px;
+}
+
+.selected-activity {
+    background-color: rgb(53, 116, 2) !important;
+    font-weight: bold;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+.selected-activity > *:hover {
+    background-color: rgb(151, 81, 0);
 }
