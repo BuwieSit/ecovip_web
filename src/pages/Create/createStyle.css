@@ -47,6 +47,7 @@
 .packages > thead > tr > td {
     text-align: center;
     padding: 10px;
+    background-image: linear-gradient( rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0));
 }
 .packages > tbody > tr {
     cursor: pointer;
