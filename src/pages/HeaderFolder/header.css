@@ -36,6 +36,7 @@
 .logo-cont > img {
     width: 60px;
     aspect-ratio: 1;
+    object-fit: contain;
 }
 
 .nav-list {

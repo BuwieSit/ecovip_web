@@ -12,7 +12,14 @@ import branch2 from '../../components/assets/branch2.png';
 import branch3 from '../../components/assets/branch3.png';
 
 function Home() {
-      
+    
+    // const linkText = document.getElementById('storyText');
+    // const popup = document.querySelector('.popup-info');
+
+    // linkText.addEventListener('mouseover', () => {
+    //     popup.style.opacity = '1';
+    // });
+
     return(
         
         <>
@@ -46,10 +53,7 @@ function Home() {
                         </p>
                         <p className='tahakDesc'>
                             Its name blends <i>“Tahanan”</i> (home) and <i>“Kalikasan”</i> (environment), symbolizing wellness in nature, while also echoing “tahak” (journey)—a path to healing and self-discovery. 
-                        </p>
-                        <p className='tahakDesc'>
-                            As <strong>TahaK</strong> puts it: <i>“Ito ay pagtahak sa Pilipinas, sa payapang pahingahan tungo sa ganap na kaginhawaan.”</i> This reflects its mission to guide travelers toward wellness through nature.
-                        </p>    
+                        </p> 
 
                     </section>
                     <section className='sections lower-sect'>
@@ -79,18 +83,32 @@ function Home() {
                     
                     <ul className='pr-list about-list'>
                         <li>
-                            <p>Story</p>
+                            <p id='storyText'>Story</p>
                             <hr></hr>
                         </li>
                         <li>
-                            <p>Mission</p>
+                            <p id='missionText'>Mission</p>
                             <hr></hr>
                         </li>
                         <li>
-                            <p>Vision</p>
+                            <p id='visionText'>Vision</p>
                             <hr></hr>
                         </li>
                     </ul>
+
+                    <div className='popup-container'>
+                        <div className='popup-info story'>
+                            <p>TahaK (Tahanan sa Kalikasan) is the first wellness-focused tour operator offering curated packages in CALABARZON, born from a vision to create a sanctuary where nature becomes a home for travelers seeking healing and transformation. The name TahaK is a meaningful fusion of two Filipino words—“Tahanan” (home) and “Kalikasan” (environment), signifying the environment as a home for wellness. It also echoes the Filipino word “tahak”, meaning journey, reinforcing the idea of a path toward healing and self-discovery.</p>
+                        </div>
+
+                        <div className='popup-info mission'>
+                            <p>To provide a Filipinized wellness tourism experience that nurtures the body, mind, and soul through immersive tours and wellness exercises engaging all five senses - sight, smell, touch, taste, and sound - across diverse, serene Philippine destinations. </p>
+                        </div>
+
+                        <div className='popup-info vision'>
+                            <p>To be the leading pioneer in Filipinized wellness tourism, recognized globally for offering transformative, sensory-rich journeys that celebrate the Philippines’ rich cultural heritage and natural beauty. </p>
+                        </div>
+                    </div>
                 </div>
             </section>
 

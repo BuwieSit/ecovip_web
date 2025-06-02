@@ -2,18 +2,27 @@
 
 .create-wrapper {
     width: 100%;
-    padding-top: 10%;
-    padding-bottom: 15%;
+    padding-top: 5%;
     font-family: var(--text-font-2);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
     background-image: linear-gradient(to right,	rgba(15, 239, 0, 0.3), rgba(255, 255, 255, 0.5), rgba(15, 239, 0, 0.3));
 
 }
-
+.diy-container {
+    font-family: var(--text-font-2);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 15%;
+    background-image: linear-gradient(to right,	rgba(15, 239, 0, 0.3), rgba(255, 255, 255, 0.5), rgba(15, 239, 0, 0.3));
+}
 .packages {
     width: 300px;
     height: 400px;
@@ -80,11 +89,13 @@
 }
 .diy-package:hover {
     color: black;
-    text-shadow: 0px 0px 0px;
+    text-shadow: 0px 0px 0px black;
+    transform: scale(1);
 }
 
 .selected-activity {
-    background-color: rgb(53, 116, 2) !important;
+    background-color: #fff !important;
+    color: black !important;
     font-weight: bold;
     color: black;
     transition: background-color 0.3s ease;
@@ -92,3 +103,112 @@
 .selected-activity > *:hover {
     background-color: rgb(151, 81, 0);
 }
+.toast-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    animation: fadeInOut 2.5s ease;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+    10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    90% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+}
+
+.remove-all-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    border: none;
+    width: 120px;
+    aspect-ratio: 1;
+    line-height: 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px black;
+    transition: all 0.3s ease;
+}
+.remove-all-btn:hover {
+    background-color: rgb(161, 6, 6);
+}
+.remove-all-btn > img {
+    width: 30px;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    color: white;
+}
+
+
+
+.modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.modal-buttons button {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+.modal-buttons button:hover {
+    transform: scale(1.1);
+}
+.modal-buttons button:first-child {
+    background-color: #d9534f;
+    color: white;
+}
+
+.modal-buttons button:last-child {
+    background-color: #ccc;
+}
+
+.modal-content {
+    width: 400px;   
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.9);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    font-weight: 700;
+}
+
+.disabled-activity {
+  pointer-events: none;
+  opacity: 0.5;
+  background-color: #f8f8f8;
+  color: #888;
+}
+
