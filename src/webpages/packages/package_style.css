@@ -103,7 +103,18 @@ a {
 }
 .inquire-btn {
     width: 80%;
-    padding: 2%;
+    padding: 5%;
     margin: auto;
-    font-family: var();
+    background-color: rgba(0, 0, 0, 0.9);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: var(--text-font-2);
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.inquire-btn:hover {
+    background-color: rgba(0, 0, 0, 1);
+    font-weight: 500;
 }
