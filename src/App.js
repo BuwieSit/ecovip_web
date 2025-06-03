@@ -21,9 +21,9 @@ function App() {
             <Content />
           </>
         }/>
-        <Route path='/About_Page' element={<About_Page/>}/>
+        <Route path='/' element={<About_Page/>}/>
         <Route path='/Package_Page' element={<Package_Page/>}/>
-        <Route path='/Contact_Page' element={<Contact_Page/>}/>
+        <Route path='/' element={<Contact_Page/>}/>
         <Route path="/create" element={<Create/>} />
         <Route path="/Book" element={<Book />} />
       </Routes>

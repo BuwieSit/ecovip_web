@@ -300,8 +300,8 @@ function Create() {
                                     <td
                                         id="book-button"
                                         colSpan="2"
-                                        className={selectedActivities.length < 6 ? "book-button disabled" : "book-button"}
-                                        onClick={() => selectedActivities.length >= 6 && handleInquire()}
+                                        className={selectedActivities.length < 5 ? "book-button disabled" : "book-button"}
+                                        onClick={() => selectedActivities.length >= 5 && handleInquire()}
                                     >
                                         Book now
                                     </td>
