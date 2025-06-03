@@ -6,7 +6,7 @@ import Content from './pages/Content/content';
 import About_Page from './webpages/about/About_Page.js';
 import Contact_Page from './webpages/contact/Contact_Page.js';
 import Package_Page from './webpages/packages/Package_Page.js';
-
+import Book from './webpages/book/Book.js';
 
 function App() {
 
@@ -24,8 +24,8 @@ function App() {
         <Route path='/About_Page' element={<About_Page/>}/>
         <Route path='/Package_Page' element={<Package_Page/>}/>
         <Route path='/Contact_Page' element={<Contact_Page/>}/>
-
         <Route path="/create" element={<Create/>} />
+        <Route path="/Book" element={<Book />} />
       </Routes>
 
     </Router>

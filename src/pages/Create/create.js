@@ -1,4 +1,5 @@
-import { useState, useRef, act } from 'react';
+import { useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../../components/assets/global.css';
 import './createStyle.css';
 import trash from '../../components/assets/trash.png'
@@ -6,7 +7,7 @@ import trash from '../../components/assets/trash.png'
 const activitiesData = [
   { name: 'Coffee Aromatherapy Session', price: 3000, package: 'Kapwa' },
   { name: 'Farm Connection Walk', price: 799, package: 'Kapwa' },
-  { name: 'Mindful Coffee Brewing & Tasting', price: '', package: 'Kapwa' },
+  { name: 'Mindful Coffee Brewing & Tasting', price: 0, package: 'Kapwa' },
   { name: 'Coffee Scrub Session', price: 1000, package: 'Kapwa' },
   { name: 'Coffee Painting (Creative Calm)', price: 150, package: 'Kapwa' },
 
@@ -17,7 +18,7 @@ const activitiesData = [
   { name: 'Arnis / Yoga Meditation', price: 700, package: 'Kadalisayan' },
   { name: 'Pakikipag-kapwa + Baybayin Affirmation at Wakim Lake', price: 100, package: 'Kadalisayan' },
 
-  { name: 'Outdoor Painting Meditation using Natural Dye', price: '', package: 'Kalikhasan' },
+  { name: 'Outdoor Painting Meditation using Natural Dye', price: 0, package: 'Kalikhasan' },
   { name: 'Hinulugang Taktak Guided Waterfall Meditation and Cleansing', price: 630, package: 'Kalikhasan' },
   { name: 'Legacy Trail and Forest Bathing at Masungi Georeserve', price: 1800, package: 'Kalikhasan' },
   { name: 'Pakikipagkapwa Circle and Reflection + Baybayin Affirmation and Tea tasting', price: 100, package: 'Kalikhasan' },
@@ -81,6 +82,19 @@ function Create() {
     const toastTimeoutRef = useRef(null);
     const [showConfirmModal, setShowConfirmModal] = useState(false);
     const [activePackage, setActivePackage] = useState(null);
+    const MAX_ACTIVITIES = 7;
+    const navigate = useNavigate();
+
+    const getSelectedPackageName = () => {
+        const packageSet = new Set(selectedActivities.map(a => getActivityPackage(a.name)));
+        const sortedPackages = Array.from(packageSet).sort(); // Optional: sort alphabetically
+        return sortedPackages.length > 0 ? sortedPackages.join(' + ') + ' Package' : 'Custom Package';
+    };
+
+    const handleInquire = () => {
+        const packageName = getSelectedPackageName();
+        navigate('/Book', { state: packageName });
+    };
 
     const getActivityPackage = (activityName) => {
         for (const [pkg, activities] of Object.entries(packageMap)) {
@@ -108,6 +122,11 @@ function Create() {
         const alreadyAdded = selectedActivities.find(item => item.name === activityName);
         if (alreadyAdded) return;
 
+        if (selectedActivities.length >= MAX_ACTIVITIES) {
+            showToast("Limit reached (7 activities max)");
+            return;
+        }
+
         const activity = activitiesData.find(item => item.name === activityName);
         if (!activity) return;
 
@@ -125,6 +144,7 @@ function Create() {
             showToast(`Cannot mix with selected package`);
         }
     };
+
         const showToast = (activityName) => {
 
             if (toastTimeoutRef.current) {
@@ -265,8 +285,29 @@ function Create() {
                                     <td>₱{totalPrice.toLocaleString()}</td>
                                 </tr>
                                 <tr>
-                                    <td colSpan='2' style={{textAlign: "center", fontSize: "20px"}}>Book now</td>
+                                    <td></td>
+                                    <td>+E-vat may apply</td>
                                 </tr>
+                                <tr>
+                                    <td colSpan={2}>{selectedActivities.length > 0 && (
+                                            <h3 style={{ textAlign: 'center', marginTop: '10px' }}>
+                                                {getSelectedPackageName()}
+                                            </h3>
+                                        )}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td
+                                        id="book-button"
+                                        colSpan="2"
+                                        className={selectedActivities.length < 6 ? "book-button disabled" : "book-button"}
+                                        onClick={() => selectedActivities.length >= 6 && handleInquire()}
+                                    >
+                                        Book now
+                                    </td>
+                                </tr>
+
+
                             </>
                         )}
                     </tbody>

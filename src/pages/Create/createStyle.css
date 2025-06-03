@@ -217,3 +217,22 @@
   cursor: not-allowed;
 }
 
+.book-button {
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+    background-color: #45a049;
+}
+
+.book-button.disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
