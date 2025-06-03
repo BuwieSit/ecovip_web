@@ -1,0 +1,109 @@
+@import url(../../components/assets/global.css);
+
+a {
+    text-decoration: none;
+
+}
+.top {
+    width: 100%;
+    height: 600px;
+    background: url('../../components/assets/kalikhasan_images/firefly.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.top > h1 {
+    font-family: var(--title-font-2);
+    font-size: 50px;
+    background-image: linear-gradient(to right,rgb(199, 177, 70), #0FEF00, #c7b146);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: transparent;   
+}
+.top-button {
+    padding: 20px;
+    font-family: var(--text-font-2);
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid rgb(15, 239, 0) ;
+    color: #0FEF00;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+.top-button > a {
+    color: #0FEF00;
+}
+.top-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.package-section {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 20%;
+}
+
+.package-title {
+    font-family: var(--text-font-2);
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.packages-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 10%;
+}
+
+.package-card {
+    width: 350px;
+    height: 450px;
+    border-radius: 25px;
+    background-color: rgb(250, 249, 246);
+    border: 0.2px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    overflow: hidden;
+}
+.package-card > img {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+.text-wrapper {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+.text-wrapper> h3 {
+    line-height: 0;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+.text-wrapper > p {
+    font-size: 13px;
+}
+.inquire-btn {
+    width: 80%;
+    padding: 2%;
+    margin: auto;
+    font-family: var();
+}

@@ -1,5 +1,10 @@
 @import url('../../components/assets/global.css');
 
+.body-background {
+    background-color: red;
+    background: url('../../components/assets/firefly.jpg') 100% repeat fixed;
+    background-size: cover;
+}
 .create-wrapper {
     width: 100%;
     padding-top: 5%;
@@ -9,7 +14,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-evenly;
-    background-image: linear-gradient(to right,	rgba(15, 239, 0, 0.3), rgba(255, 255, 255, 0.5), rgba(15, 239, 0, 0.3));
+    /*background-image: linear-gradient(to right,	rgba(15, 239, 0, 0.3), rgba(255, 255, 255, 0.5), rgba(15, 239, 0, 0.3));*/
 
 }
 .diy-container {
@@ -21,7 +26,7 @@
     justify-content: center;
     gap: 10px;
     padding-bottom: 15%;
-    background-image: linear-gradient(to right,	rgba(15, 239, 0, 0.3), rgba(255, 255, 255, 0.5), rgba(15, 239, 0, 0.3));
+   /* background-image: linear-gradient(to right,	rgba(15, 239, 0, 0.3), rgba(255, 255, 255, 0.5), rgba(15, 239, 0, 0.3));*/
 }
 .packages {
     width: 300px;
@@ -46,7 +51,7 @@
     background: var(--kalikhasan-color);
 }
 .kabanhawan-package {
-    background: rgba(52, 79, 33, 0.5);
+    background: rgba(52, 79, 33, 1);
 }
 .packages > thead {
     font-family: var(--header-font);
@@ -56,15 +61,15 @@
 .packages > thead > tr > td {
     text-align: center;
     padding: 10px;
-    background-image: linear-gradient( rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0));
+    background-image: linear-gradient( rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0));
 }
-.packages > tbody > tr {
+.packages > th > tr {
     cursor: pointer;
     transition: all 0.3s ease;
 
 }
 .packages > tbody tr:hover {
-    background-color: #C25E00;
+    background-color: #AFE1AF;
     color: black;
 
 }
@@ -78,7 +83,7 @@
 .diy-package {
     width: 500px;
     height: auto;
-
+    background-color: #AFE1AF  ;
     box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
     backdrop-filter: blur( 9px );
     -webkit-backdrop-filter: blur( 9px );
@@ -94,10 +99,9 @@
 }
 
 .selected-activity {
-    background-color: #fff !important;
+    background-color: #AFE1AF !important;
     color: black !important;
-    font-weight: bold;
-    color: black;
+    font-weight: bold;    
     transition: background-color 0.3s ease;
 }
 .selected-activity > *:hover {
@@ -155,7 +159,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,7 +212,8 @@
 .disabled-activity {
   pointer-events: none;
   opacity: 0.5;
-  background-color: #f8f8f8;
-  color: #888;
+  background-color: #d9534f;
+  color: white;
+  cursor: not-allowed;
 }
 

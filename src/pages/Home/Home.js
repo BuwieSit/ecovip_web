@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom'
 import '../../components/assets/global.css'
 import './home.css';
 import calabarzon_video from '../../Videos/calabarzon_video.mp4';
@@ -13,15 +15,12 @@ import branch3 from '../../components/assets/branch3.png';
 
 function Home() {
     
-    // const linkText = document.getElementById('storyText');
-    // const popup = document.querySelector('.popup-info');
-
-    // linkText.addEventListener('mouseover', () => {
-    //     popup.style.opacity = '1';
-    // });
-
+    const [showPopup, setShowPopup] = useState(null);
+    const handleClick = (section) => {
+        setShowPopup(prev => (prev === section ? null : section));
+    };
     return(
-        
+
         <>
             <div className='top-wrapper'>
                 <video className='video-bg' autoPlay muted loop playsInline>
@@ -82,30 +81,32 @@ function Home() {
                     </div>
                     
                     <ul className='pr-list about-list'>
-                        <li>
+                        <li onClick={() => handleClick('story')} >
                             <p id='storyText'>Story</p>
                             <hr></hr>
                         </li>
-                        <li>
+                        <li onClick={() => handleClick('mission')}>
                             <p id='missionText'>Mission</p>
                             <hr></hr>
                         </li>
-                        <li>
+                        <li onClick={() => handleClick('vision')}>
                             <p id='visionText'>Vision</p>
                             <hr></hr>
                         </li>
                     </ul>
 
                     <div className='popup-container'>
-                        <div className='popup-info story'>
-                            <p>TahaK (Tahanan sa Kalikasan) is the first wellness-focused tour operator offering curated packages in CALABARZON, born from a vision to create a sanctuary where nature becomes a home for travelers seeking healing and transformation. The name TahaK is a meaningful fusion of two Filipino words—“Tahanan” (home) and “Kalikasan” (environment), signifying the environment as a home for wellness. It also echoes the Filipino word “tahak”, meaning journey, reinforcing the idea of a path toward healing and self-discovery.</p>
-                        </div>
+                
+                            <div className={`popup-info story ${showPopup === 'story' ? 'show' : ''}`}>
+                                <p>TahaK (Tahanan sa Kalikasan) is the first wellness-focused tour operator offering curated packages in CALABARZON, born from a vision to create a sanctuary where nature becomes a home for travelers seeking healing and transformation. The name TahaK is a meaningful fusion of two Filipino words—“Tahanan” (home) and “Kalikasan” (environment), signifying the environment as a home for wellness. It also echoes the Filipino word “tahak”, meaning journey, reinforcing the idea of a path toward healing and self-discovery.</p>
+                            </div>
+                      
 
-                        <div className='popup-info mission'>
+                        <div className={`popup-info mission ${showPopup === 'mission' ? 'show' : ''}`}>
                             <p>To provide a Filipinized wellness tourism experience that nurtures the body, mind, and soul through immersive tours and wellness exercises engaging all five senses - sight, smell, touch, taste, and sound - across diverse, serene Philippine destinations. </p>
                         </div>
 
-                        <div className='popup-info vision'>
+                        <div className={`popup-info vision ${showPopup === 'vision' ? 'show' : ''}`}>
                             <p>To be the leading pioneer in Filipinized wellness tourism, recognized globally for offering transformative, sensory-rich journeys that celebrate the Philippines’ rich cultural heritage and natural beauty. </p>
                         </div>
                     </div>

@@ -4,6 +4,7 @@
   --animate-duration: 7s;
 }
 
+
 .top-wrapper {
     position: relative;
     width: 100%;
@@ -144,6 +145,10 @@
     color: white;
     opacity: 0;
     transition: all 0.3s ease;
+}
+.popup-info.show {
+    opacity: 1;
+    visibility: visible;
 }
 .story {
     overflow-y: scroll;

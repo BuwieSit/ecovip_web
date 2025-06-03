@@ -10,24 +10,26 @@ const activitiesData = [
   { name: 'Coffee Scrub Session', price: 1000, package: 'Kapwa' },
   { name: 'Coffee Painting (Creative Calm)', price: 150, package: 'Kapwa' },
 
-  { name: 'Canoe Ride / Bamboo Rafting at Pagsanjan Falls', price: 800, package: 'Kadalisayan' },
-  { name: 'Tacsiyapo Wall and Reflection Activity', price: 250, package: 'Kadalisayan' },
-  { name: 'Fish Feeding', price: 150, package: 'Kadalisayan' },
-  { name: 'Outdoor Painting', price: 300, package: 'Kadalisayan' },
-  { name: 'Arnis / Yoga Meditation', price: 400, package: 'Kadalisayan' },
-  { name: 'Pakikipag-kapwa + Baybayin Affirmation at Wakim Lake', price: 250, package: 'Kadalisayan' },
+  { name: 'Canoe Ride / Bamboo Rafting at Pagsanjan Falls', price: 1350, package: 'Kadalisayan' },
+  { name: 'Tacsiyapo Wall and Reflection Activity', price: 100, package: 'Kadalisayan' },
+  { name: 'Fish Feeding', price: 50, package: 'Kadalisayan' },
+  { name: 'Outdoor Painting', price: 400, package: 'Kadalisayan' },
+  { name: 'Arnis / Yoga Meditation', price: 700, package: 'Kadalisayan' },
+  { name: 'Pakikipag-kapwa + Baybayin Affirmation at Wakim Lake', price: 100, package: 'Kadalisayan' },
 
-  { name: 'Outdoor Painting Meditation using Natural Dye', price: 300, package: 'Kalikhasan' },
-  { name: 'Hinulugang Taktak Guided Waterfall Meditation and Cleansing', price: 500, package: 'Kalikhasan' },
-  { name: 'Legacy Trail and Forest Bathing at Masungi Georeserve', price: 750, package: 'Kalikhasan' },
-  { name: 'Pakikipagkapwa Circle and Reflection + Baybayin Affirmation and Tea tasting', price: 300, package: 'Kalikhasan' },
-  { name: 'Firefly Watching', price: 450, package: 'Kalikhasan' },
+  { name: 'Outdoor Painting Meditation using Natural Dye', price: '', package: 'Kalikhasan' },
+  { name: 'Hinulugang Taktak Guided Waterfall Meditation and Cleansing', price: 630, package: 'Kalikhasan' },
+  { name: 'Legacy Trail and Forest Bathing at Masungi Georeserve', price: 1800, package: 'Kalikhasan' },
+  { name: 'Pakikipagkapwa Circle and Reflection + Baybayin Affirmation and Tea tasting', price: 100, package: 'Kalikhasan' },
+  { name: 'Firefly Watching', price: 0, package: 'Kalikhasan' },
 
+  { name: 'Herbal Tea Welcome', price: 40, package: 'Kabanhawan'},
   { name: 'Guided Trek and Banahaw Folklore Storytelling', price: 600, package: 'Kabanhawan' },
   { name: 'Guided Yoga Session', price: 350, package: 'Kabanhawan' },
   { name: 'Forest Bathing', price: 400, package: 'Kabanhawan' },
   { name: 'Sta. Lucia Falls Bathing and Water Meditation', price: 500, package: 'Kabanhawan' },
   { name: 'Traditional Hilot Healing Session + Tea Tasting', price: 450, package: 'Kabanhawan' },
+  { name: 'Pakikipag-Kapwa Circle + Baybayin Affirmation', price: 100, package: 'Kabanhawan'}
 ];
 
 const packageMap = {
@@ -45,7 +47,7 @@ const packageMap = {
         'Outdoor Painting',
         'Arnis / Yoga Meditation',
         'Pakikipag-kapwa + Baybayin Affirmation at Wakim Lake',
-        'Isdaan' // Not in activitiesData label, just a marker for logic
+        'Isdaan'
     ],
     'Kalikhasan': [
         'Outdoor Painting Meditation using Natural Dye',
@@ -55,6 +57,7 @@ const packageMap = {
         'Firefly Watching'
     ],
     'Kabanhawan': [
+        'Herbal Tea Welcome',
         'Guided Trek and Banahaw Folklore Storytelling',
         'Guided Yoga Session',
         'Forest Bathing',
@@ -142,9 +145,9 @@ function Create() {
         showToast(activityName + " removed") ;
     };
 
-    const handleRemoveAll = () => {
+    const handleRemoveAll = () => { 
         setSelectedActivities([]);
-        setActivePackage(null); // allow selection again
+        setActivePackage(null); 
         setShowConfirmModal(false);
         showToast("All activities removed");
     };
@@ -187,7 +190,7 @@ function Create() {
 
     return (
         <>
-        
+        <div className='body-background'>
             <div className='create-wrapper'>
 
                 {toastMessage && (
@@ -222,6 +225,7 @@ function Create() {
                 ], 'kalikhasan-package')}
 
                 {renderTable('Kabanhawan Package', [
+                    'Herbal Tea Welcome',
                     'Guided Trek and Banahaw Folklore Storytelling',
                     'Guided Yoga Session',
                     'Forest Bathing',
@@ -267,6 +271,7 @@ function Create() {
                         )}
                     </tbody>
                 </table>
+                
                 {showConfirmModal && (
                     <div className="modal-overlay">
                         <div className="modal-content">
@@ -284,7 +289,8 @@ function Create() {
                     <p>Remove all</p>
                 </button>
             </div>
-        </>
+        </div>
+    </>
     );
 }
 
